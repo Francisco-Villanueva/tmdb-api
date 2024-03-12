@@ -5,8 +5,7 @@ const cors = require("cors");
 const db = require("./src/db");
 const models = require("./src/models");
 const corsOptions = {
-  origin: "http://localhost:5173",
-  // Agrega otras opciones de configuración si es necesario.
+  origin: ["http://localhost:5173", "https://tmdb-client-ruddy.vercel.app/"],
 };
 app.use(cors(corsOptions));
 app.use(express.json());
